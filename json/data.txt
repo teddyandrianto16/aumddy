@@ -1,0 +1,37 @@
+
+  {
+  "data": [
+    {
+      "id": "1",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "harga": "200.000",
+      "gambar": "jaket_new1.jpg",
+	  "kategori": "baju"
+    },
+    {
+      "id": "2",
+      "name": "Dunlap sssss",
+      "deskripsi": "ini deskripsi",
+      "harga": "300.000",
+      "gambar": "jaket_new2.jpg",
+	  "kategori": "baju"
+    },
+    {
+      "id": "3",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "harga": "250.000",
+      "gambar": "jaket_new3.jpg",
+	  "kategori": "baju"
+    },
+	 {
+      "id": "4",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "harga": "200.000",
+      "gambar": "jaket_new4.jpg",
+	  "kategori": "baju"
+    }
+  ]
+  }

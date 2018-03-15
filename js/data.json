@@ -1,0 +1,49 @@
+{
+  "keranjang": [
+    {
+      "id": "1",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "2",
+      "gambar": "jaket_new1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "1",
+      "gambar": "jaket_new2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "3",
+      "gambar": "jaket_new3.jpg"
+    }
+  ],
+
+  "admin": [
+    {
+      "id": "1",
+      "name": "Robert Kim",
+      "gender": "male",
+      "phone": "+1 (890) 543-2508",
+      "address": "Banten, Indonesia"
+    },
+    {
+      "id": "2",
+      "name": "Kirana Sari",
+      "gender": "female",
+      "phone": "+1 (831) 564-2190",
+      "address": "Jawa Barat, Indonesia"
+    },
+    {
+      "id": "3",
+      "name": "Adam Malik",
+      "gender": "male",
+      "phone": "+1 (882) 441-3367",
+      "address": "Jakarta, Indonesia"
+    }
+  ]
+}

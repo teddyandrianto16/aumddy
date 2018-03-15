@@ -1,0 +1,91 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "name": "Dunlap Hubbard",
+      "gender": "male",
+      "phone": "+1 (890) 543-2508",
+      "address": "169 Rutledge Street, Konterra, Northern Mariana Islands, 8551"
+    },
+    {
+      "id": "2",
+      "name": "Kirsten Sellers",
+      "gender": "female",
+      "phone": "+1 (831) 564-2190",
+      "address": "886 Gallatin Place, Fannett, Arkansas, 4656"
+    },
+    {
+      "id": "3",
+      "name": "Acosta Robbins",
+      "gender": "male",
+      "phone": "+1 (882) 441-3367",
+      "address": "697 Linden Boulevard, Sattley, Idaho, 1035"
+    }
+  ],
+  
+  "keranjang": [
+    {
+      "id": "1",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "2",
+      "gambar": "jaket_new1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Dunlap sssss",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "1",
+      "gambar": "jaket_new2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "3",
+      "gambar": "jaket_new3.jpg"
+    },
+	 {
+      "id": "4",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "jumlah": "3",
+      "gambar": "jaket_new4.jpg"
+    }
+  ],
+  
+  "barang": [
+    {
+      "id": "1",
+      "name": "Dunlap Hubbard",
+      "deskripsi": "ini deskripsi",
+      "harga": "200.000",
+      "gambar": "jaket_new1.jpg",
+	  "kategori": "baju"
+    },
+    {
+      "id": "2",
+      "name": "Dunlap sssss",
+      "deskripsi": "ini deskripsi",
+      "harga": "300.000",
+      "gambar": "jaket_new2.jpg",
+	  "kategori": "baju"
+    },
+    {
+      "id": "3",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "harga": "250.000",
+      "gambar": "jaket_new3.jpg",
+	  "kategori": "baju"
+    },
+	 {
+      "id": "4",
+      "name": "ddcll",
+      "deskripsi": "ini deskripsi",
+      "harga": "200.000",
+      "gambar": "jaket_new4.jpg",
+	  "kategori": "baju"
+    }
+  ]
+  }
