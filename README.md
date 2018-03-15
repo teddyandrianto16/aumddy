@@ -1,0 +1,2 @@
+# aumddy
+aplikai online shop
