@@ -5,30 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="./img/icon.png">
 
-    <title>AUMDDY | Store</title>
+   <title>AUMDDY | Store</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
-
-    <link href="./css/font-awesome.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="./js/npm.js"></script>
-
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/dataTables.bootstrap.min.css">
+    
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
       #loading{
@@ -71,7 +61,7 @@
    
   </head>
 
-  <body style="background-color: #999"> 
+  <body> 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -110,10 +100,7 @@
     </nav>
 
 
-<div  style="margin-top: 110px; background-color: #fff" class="container">
-  <div class="row">
-	
-  <div class="col-md-12">
+<div class="container utama">
     <div class="box">
       <div class="box-header">
         <h3 class="box-title">Data User</h3>
@@ -138,21 +125,19 @@
                 <td>Jl.cikoneng no 79</td>
                 <td>081223321456</td>
                 <td><button class="btn btn-warning btn-xs center-block">Reset Password</button></td>
-                <td><center><div class="btn-group"><button class="btn btn-success btn-xs ">Edit</button><button class="btn btn-success btn-xs center-block">Delete</button></div></center></td>
+                <td><center><div class="btn-group"><button class="btn btn-success btn-xs " data-toggle="modal" data-target="#exampleModalCenter">Edit</button><button class="btn btn-success btn-xs center-block" onclick="popupdelete()">Delete</button></div></center></td>
               </tr>
           </tbody>
         </table>
       </div>
     </div>
 </div>
-</div>
-</div>
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title"><b>Input Barang</b></h2>
+        <h2 class="modal-title"><b>Edite User</b></h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -218,6 +203,15 @@
     </div>
   </div>
 </div>
+<script>
+function popupdelete() {
+    var txt;
+    if (confirm("Apakah Anda Yakin Menghapus ini!")) {
+        alert("Data Terhapus");
+    }else{}
+}
+</script>
+
 
 
   </body>
