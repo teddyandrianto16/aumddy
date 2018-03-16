@@ -5,29 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="./img/icon.png">
 
-    <title>AUMDDY | Login</title>
+   <title>AUMDDY | Login</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-
-    <link href="./css/font-awesome.css" rel="stylesheet">
-
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="./js/npm.js"></script>
-
-    <script src="./js/jquery-3.3.1.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="./js/jquery.validate.js"></script>
-
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/dataTables.bootstrap.min.css">
+    
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
 
@@ -60,7 +51,7 @@
     </script>
   </head>
 
-  <body style="background-color: #f0f0f0">
+  <body>
    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -81,9 +72,9 @@
          
 
           <ul class="nav navbar-nav navbar-right ">
-            <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-cart-arrow-down fa-lg"> <span class="badge" style="background-color: #0c7069; margin-top:-15px; margin-left: -8px;">3</span></span></a>
-              <ul  style="background-color: #fff; width: 250px" class="dropdown-menu" > 
-              <li id="keranjang"></li>
+            <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-cart-arrow-down fa-lg"> <span class="badge beli" >3</span></span></a>
+              <ul class="dropdown-menu box-keranjangan" > 
+              <li id="keranjang" ></li>
               <div class="media col-md-12">    
                 <button type="submit" class="btn btn-success btn-block "> Bayar</button>
               </div>   
@@ -183,14 +174,13 @@
 
 
 
-<div  style="margin-top: 110px; margin-bottom: 100px" class="container">
+<div class="container utama">
 	<div class="row">
-    <div class="col-md-5 col-sm-offset-2" style="background-color: #fff;">
+    <div class="col-md-5 col-sm-offset-2 box">
       <div class="text-center">
         <h3 style="font-weight: bold; color: #0c7069">Login</h3>
       </div>
       <hr>
-      <!-- /.box-header -->
       <div class="panel-body">
         <form id="signupForm" method="post" action="">
           <div class="box-body">            
@@ -209,7 +199,7 @@
         </form>
       </div>
     </div>
-    <div class="col-md-3" style="background-color: #0c7069;color:#fff;height: 282px;">
+    <div class="col-md-3 box2">
       
       <h4>New Here?</h4>
       <br>
@@ -245,7 +235,6 @@
         },
         errorElement: "em",
         errorPlacement: function ( error, element ) {
-          // Add the `help-block` class to the error element
           error.addClass( "help-block" );
 
           if ( element.prop( "type" ) === "checkbox" ) {
@@ -266,13 +255,13 @@
   </script>
 
   </body>
-  <footer class="" style="background-color: #0c7069;color: #fff;">
+  <footer class="footer1" >
     <div class="container">
         <div class="row">
            <div class="col-md-4">
           <br>
               <img src="./img/umddy1.png" class="img-responsive" width="150px" style="margin-bottom:10px;">
-              <p  align="justify" style="font-weight: bold;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p  align="justify"><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</b></p>
                
 
           </div>
