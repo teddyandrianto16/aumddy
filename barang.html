@@ -5,30 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="./img/icon.png">
 
-    <title>UMDDY | Store</title>
+    <title>AUMDDY | Store</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
-
-    <link href="./css/font-awesome.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="./js/npm.js"></script>
-
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/dataTables.bootstrap.min.css">
+    
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
       #loading{
@@ -62,7 +52,7 @@
             { "data": "name" },
             { "data": "stok" },
             { "data": "harga" },
-            { "defaultContent": "<div class='btn-group btn-block'><a class='edite btn btn-warning btn-xs'>edit</a><a class='edite btn btn-danger btn-xs '>Delete</a></div>"}
+            { "defaultContent": "<div class='btn-group btn-block'><a class='edite btn btn-warning btn-xs'  data-toggle='modal' data-target='#exampleModalCenter2'>edit</a><a class='edite btn btn-danger btn-xs' onclick='popupdelete()'>Delete</a></div>"}
         ]
     } );
     $('#tabel_barang tbody').on( 'click', 'button', function () {
@@ -71,11 +61,19 @@
     } );
 } );
     </script> 
+    <script>
+function popupdelete() {
+    var txt;
+    if (confirm("Apakah Anda Yakin Menghapus ini!")) {
+        alert("Data Terhapus");
+    }else{}
+}
+</script>
 
    
   </head>
 
-  <body style="background-color: #999">
+  <body>
     <div id="loading"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -92,7 +90,7 @@
           <ul class="nav navbar-nav">
             <li><a href="barang.html">Barang </a></li>
             <li><a href="transaksi.html">Transaksi</a></li>
-            <li><a href="index.html">Akun Management </a></li>
+            <li><a href="Management_akun.html">Akun Management </a></li>
           </ul>
 
         
@@ -115,14 +113,14 @@
     </nav>
 
 
-<div  style="margin-top: 110px; background-color: #fff" class="container">
+<div class="container utama">
   <div class="row">
 	
   <div class="col-md-12">
     <div class="box">
       <div class="box-header">
         <h3 class="box-title">Data Barang</h3>
-          <span><button class="btn btn-success pull-right"  data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: -40px;">Add Barang</button>
+          <span><button class="btn btn-success pull-right"  data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: -30px;">Add Barang</button>
       </div>
       <hr>
       <div class="box-body ">
@@ -142,12 +140,82 @@
 </div>
 </div>
 </div>
-
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h2 class="modal-title"><b>Input Barang</b></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+     <div class="modal-body">
+          <form id="myForm" action="http://localhost/arj/index.php?/admin/input_barang" method="post">
+            <div class="box-body">
+                <div class="form-group">
+                  <label>ID Barang</label>
+                  <input type="hidden" name="txtId" value="4">
+                  <input type="text" class="form-control" name="id" placeholder="Masukan id Barang">
+                </div>
+                <div class="form-group">
+                  <label>Nama Barang</label>
+                  <input type="text" class="form-control" name="nama" placeholder="Masukan Nama Barang">
+                </div>
+                <div class="form-group">
+                  <label>Kategori</label>
+                  <input type="text" class="form-control" name="kategori" placeholder="Masukan Kategori">
+                </div>
+                <div class="form-group">
+                  <label>Harga</label>
+                  <input type="text" class="form-control" name="harga" placeholder="Masukan Harga">
+                </div>
+             
+              <div class="form-group">
+                  <label>Stok</label>
+                  <input type="text" class="form-control" name="stok" placeholder="Masuakn Stok">
+                </div>
+             
+             
+              </div>
+  
+            
+          </form>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="modal-body">
+       <div class="form-group">
+                  <label>Deskripsi</label>
+                 <textarea class="form-control" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+           <label>Gambar Barang</label>
+          <div class="dropzone-wrapper">
+        <div class="dropzone-desc">
+         <i class="glyphicon glyphicon-download-alt"></i>
+         <p>Choose an image file or drag it here.</p>
+        </div>
+        <input type="file" name="img_logo" class="dropzone">
+       </div>
+ </div>
+    </div>
+  </div>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title"><b>Edit  Barang</b></h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
